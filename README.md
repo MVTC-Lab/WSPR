@@ -38,13 +38,13 @@ PyTorch的CPU/CUDA安装方式见[官方历史版本说明](https://pytorch.org/
 
 ## 数据集与准备
 
-**仓库不包含数据集、训练权重或预测数组。** 数据需要从原始提供方获取，并按[数据准备说明](docs/DATA.md)在本地处理。
+**仓库不包含数据集、训练权重或预测数组。**
 
-| 数据集 | 任务 | 原始数据入口 |
-| --- | --- | --- |
-| PVOD | 10个站点，15分钟分辨率，4 h和24 h预测 | [Science Data Bank](https://doi.org/10.11922/sciencedb.01094) |
-| GEFCom2014 Solar | 3个区域，小时分辨率，24 h和96 h预测 | [IEEE PES](https://ieee-pes-data-sharing.org/datasets/detail/b1680aa5-a4b8-4423-8760-e509094cacec) |
-| PVDAQ与HRRR | 3个外部站点，4 h和24 h预测 | [PVDAQ](https://doi.org/10.25984/1846021)、[HRRR](https://rapidrefresh.noaa.gov/hrrr/) |
+| 数据集 | 任务 |
+| --- | --- |
+| PVOD | 10个站点，15分钟分辨率，4 h和24 h预测 |
+| GEFCom2014 Solar | 3个区域，小时分辨率，24 h和96 h预测 |
+| PVDAQ与HRRR | 3个外部站点，4 h和24 h预测 |
 
 PVOD主比较先保留完整处理序列的前80%，再在其中按70/10/20作时间划分。GEFCom使用周期内去累积后的修正输入；PVDAQ–HRRR使用单独的起点索引加载器。
 
@@ -56,7 +56,7 @@ python scripts/prepare_gefcom.py --raw-zip /path/to/GEFCom2014.zip --out-dir out
 python scripts/verify_data.py --dataset GEFCom --data-dir outputs/gefcom_prepared/GEFCom2014Solar_deaccum_v1
 ```
 
-准备脚本要求新的输出目录。将核验后的数据放到本地忽略目录`data/PVOD_pre80/`或`data/GEFCom2014Solar_deaccum_v1/`。CSV中`date`在首列、`OT`在最后一列，变量顺序及通道数见[输入约定](docs/DATA.md)。外部验证见[专门说明](docs/INDEPENDENT_VALIDATION.md)。
+准备脚本要求新的输出目录。将核验后的数据放到本地忽略目录`data/PVOD_pre80/`或`data/GEFCom2014Solar_deaccum_v1/`。CSV中`date`在首列、`OT`在最后一列；PVOD使用9个历史通道、8个未来NWP通道，GEFCom使用13个历史通道、12个未来NWP通道。外部验证见[专门说明](docs/INDEPENDENT_VALIDATION.md)。
 
 ## 训练与测试
 

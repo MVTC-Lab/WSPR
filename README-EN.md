@@ -48,13 +48,13 @@ Run all commands below from the repository root. CUDA was used for the research 
 
 ## Data preparation
 
-| Dataset | Study setting | Forecast duration | Data access |
-| --- | --- | --- | --- |
-| PVOD | Ten PV sites; 15-minute resolution | 4 h and 24 h | [Science Data Bank](https://doi.org/10.11922/sciencedb.01094) |
-| GEFCom2014 Solar | Three regions; hourly resolution | 24 h and 96 h | [IEEE PES data record](https://ieee-pes-data-sharing.org/datasets/detail/b1680aa5-a4b8-4423-8760-e509094cacec) |
-| PVDAQ with HRRR | Three additional PV sites; hourly resolution | 4 h and 24 h | [PVDAQ](https://doi.org/10.25984/1846021), [HRRR](https://rapidrefresh.noaa.gov/hrrr/) |
+| Dataset | Study setting | Forecast duration |
+| --- | --- | --- |
+| PVOD | Ten PV sites; 15-minute resolution | 4 h and 24 h |
+| GEFCom2014 Solar | Three regions; hourly resolution | 24 h and 96 h |
+| PVDAQ with HRRR | Three additional PV sites; hourly resolution | 4 h and 24 h |
 
-Obtain the source data from the providers and follow their usage terms. For PVOD, the primary comparison uses the first 80% of each prepared station series, followed by a chronological 70/10/20 split within that retained series. GEFCom inputs use the corrected within-cycle deaccumulation. The exact feature order, timestamps, transformations and split rules are specified in [Data preparation and input format](docs/DATA.md).
+Datasets, trained checkpoints and prediction arrays are not included. For PVOD, the primary comparison uses the first 80% of each prepared station series, followed by a chronological 70/10/20 split within that retained series. GEFCom inputs use the corrected within-cycle deaccumulation.
 
 Prepare and verify PVOD files, replacing the raw-data path with your local directory:
 

@@ -1,6 +1,6 @@
 {
   "created": "2026-11-09",
-  "status": "Locally prepared GitHub upload, not uploaded",
+  "status": "Local README revision; remote update pending",
   "repository": "https://github.com/MVTC-Lab/WSPR",
   "manifest_self_hash_excluded": true,
   "datasets_included": false,
@@ -320,13 +320,14 @@
     },
     {
       "path": "README-EN.md",
-      "bytes": 10968,
-      "sha256": "2d0f05843beb6545a873bdb86b429bdfe19ab6697d9b8994fb5a73c9d954ad1c"
+      "bytes": 10543,
+      "sha256": "50cd847d9e061e8f00bd083cc84b66a4ed4414552a4541b1de633428d5e95b31",
+      "release_adapted": true
     },
     {
       "path": "README.md",
-      "bytes": 8663,
-      "sha256": "9f545adabb9e7a95295342d17ac169d090391f220c16b56b44dfe3c95c3748b3",
+      "bytes": 8331,
+      "sha256": "9944131c6df2da2e48e12194fa2202c0aefbc4970296142563b0197577d03602",
       "source": "release-preparation",
       "source_sha256": null,
       "previous_candidate_sha256": "f82fed047b22d037410112ffba68e2f2a8d14ecdbb98607fc04aeaa7258b71e6",
@@ -580,5 +581,6 @@
       "source": "research-server:utils/tools.py",
       "source_sha256": "a5e9b0d3065004c8760bae62f140ede2407e2f4ccd27c3ad7fce1482ae49bafe"
     }
-  ]
+  ],
+  "revision": "2026-11-09-readme-simplification"
 }
