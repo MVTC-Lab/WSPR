@@ -1,0 +1,15 @@
+# Selected package versions observed in the research server environment on 2026-09-18.
+# Python 3.8.20; PyTorch build used CUDA 12.4. This is NOT a full lockfile.
+# Install the appropriate torch 2.4.0 CPU/CUDA build first; this pin prevents drift.
+torch==2.4.0
+numpy==1.23.5
+pandas==1.5.3
+scipy==1.10.1
+scikit-learn==1.2.2
+matplotlib==3.7.0
+einops==0.8.0
+reformer-pytorch==1.4.4
+local-attention==1.9.14
+sktime==0.16.1
+patool==1.12
+tqdm==4.64.1

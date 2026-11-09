@@ -1,0 +1,1097 @@
+{
+  "checkpoints": 312,
+  "residual_checkpoints": 156,
+  "permutation_replicates": 3,
+  "replay_maxima": {
+    "prediction_max_abs_diff": 0.0,
+    "truth_max_abs_diff": 0.0,
+    "head_only_max_abs_diff": 0.0,
+    "additive_identity_max_abs_diff": 0.0
+  },
+  "coverage_min": 0.9602810051337476,
+  "coverage_max": 1.0,
+  "permutation_tasks": [
+    {
+      "dataset": "GEFCom",
+      "backbone": "WSPR history backbone",
+      "pred_len": 24,
+      "pathway": "Direct-NWP",
+      "n_units": 3,
+      "mse": 0.31836685947859866,
+      "mae": 0.2917430319700452,
+      "matched_mse": 0.09315666664573088,
+      "matched_mae": 0.16124015602112404,
+      "delta_mse": 0.22521019283286778,
+      "delta_mae": 0.13050287594892113,
+      "coverage": 1.0,
+      "mse_increase_units": 3,
+      "mae_increase_units": 3,
+      "delta_mse_unit_min": 0.20926794347405844,
+      "delta_mse_unit_max": 0.24515278609288996,
+      "permutation_effects": [
+        {
+          "permutation_seed": 701,
+          "delta_mse": 0.21827684479926113,
+          "delta_mae": 0.1270882762653806
+        },
+        {
+          "permutation_seed": 1701,
+          "delta_mse": 0.2264500576119395,
+          "delta_mae": 0.13112881164304951
+        },
+        {
+          "permutation_seed": 2701,
+          "delta_mse": 0.23090367608740267,
+          "delta_mae": 0.1332915399383333
+        }
+      ]
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "WSPR history backbone",
+      "pred_len": 24,
+      "pathway": "Residual-NWP",
+      "n_units": 3,
+      "mse": 0.3028632166562913,
+      "mae": 0.29068834295853185,
+      "matched_mse": 0.09057515839538766,
+      "matched_mae": 0.16437042306694227,
+      "delta_mse": 0.21228805826090366,
+      "delta_mae": 0.12631791989158955,
+      "coverage": 1.0,
+      "mse_increase_units": 3,
+      "mae_increase_units": 3,
+      "delta_mse_unit_min": 0.1904485685975373,
+      "delta_mse_unit_max": 0.23036272338148478,
+      "permutation_effects": [
+        {
+          "permutation_seed": 701,
+          "delta_mse": 0.20601112892426418,
+          "delta_mae": 0.12326344012441315
+        },
+        {
+          "permutation_seed": 1701,
+          "delta_mse": 0.21381476055006265,
+          "delta_mae": 0.12698908442517784
+        },
+        {
+          "permutation_seed": 2701,
+          "delta_mse": 0.2170382853083841,
+          "delta_mae": 0.12870123512517767
+        }
+      ]
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "WSPR history backbone",
+      "pred_len": 96,
+      "pathway": "Direct-NWP",
+      "n_units": 3,
+      "mse": 0.3331797659515759,
+      "mae": 0.29804677156157194,
+      "matched_mse": 0.08509776161472736,
+      "matched_mae": 0.15334019269550095,
+      "delta_mse": 0.24808200433684852,
+      "delta_mae": 0.144706578866071,
+      "coverage": 0.9602810051337476,
+      "mse_increase_units": 3,
+      "mae_increase_units": 3,
+      "delta_mse_unit_min": 0.22639834958920962,
+      "delta_mse_unit_max": 0.2677956887822419,
+      "permutation_effects": [
+        {
+          "permutation_seed": 701,
+          "delta_mse": 0.24867175423737603,
+          "delta_mae": 0.14460035849540107
+        },
+        {
+          "permutation_seed": 1701,
+          "delta_mse": 0.24948801660977935,
+          "delta_mae": 0.1458322731925821
+        },
+        {
+          "permutation_seed": 2701,
+          "delta_mse": 0.24608624216339012,
+          "delta_mae": 0.14368710491022982
+        }
+      ]
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "WSPR history backbone",
+      "pred_len": 96,
+      "pathway": "Residual-NWP",
+      "n_units": 3,
+      "mse": 0.34134297864239965,
+      "mae": 0.3077460098523395,
+      "matched_mse": 0.08770845690073786,
+      "matched_mae": 0.1612968442496305,
+      "delta_mse": 0.2536345217416618,
+      "delta_mae": 0.146449165602709,
+      "coverage": 0.9602810051337476,
+      "mse_increase_units": 3,
+      "mae_increase_units": 3,
+      "delta_mse_unit_min": 0.21755993961653572,
+      "delta_mse_unit_max": 0.2823888396152177,
+      "permutation_effects": [
+        {
+          "permutation_seed": 701,
+          "delta_mse": 0.2549670962743134,
+          "delta_mae": 0.14682050841963332
+        },
+        {
+          "permutation_seed": 1701,
+          "delta_mse": 0.2556025317741928,
+          "delta_mae": 0.1474184722036122
+        },
+        {
+          "permutation_seed": 2701,
+          "delta_mse": 0.25033393717647906,
+          "delta_mae": 0.14510851618488155
+        }
+      ]
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "iTransformer",
+      "pred_len": 24,
+      "pathway": "Direct-NWP",
+      "n_units": 3,
+      "mse": 0.3133291090216455,
+      "mae": 0.2867956767416371,
+      "matched_mse": 0.09322902943102164,
+      "matched_mae": 0.15945656010246181,
+      "delta_mse": 0.2201000795906239,
+      "delta_mae": 0.1273391166391753,
+      "coverage": 1.0,
+      "mse_increase_units": 3,
+      "mae_increase_units": 3,
+      "delta_mse_unit_min": 0.20086591743015417,
+      "delta_mse_unit_max": 0.23122220254571288,
+      "permutation_effects": [
+        {
+          "permutation_seed": 701,
+          "delta_mse": 0.2135428326876042,
+          "delta_mae": 0.12417735209872313
+        },
+        {
+          "permutation_seed": 1701,
+          "delta_mse": 0.22125414755159514,
+          "delta_mae": 0.12797586799006688
+        },
+        {
+          "permutation_seed": 2701,
+          "delta_mse": 0.2255032585326723,
+          "delta_mae": 0.12986412982873588
+        }
+      ]
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "iTransformer",
+      "pred_len": 24,
+      "pathway": "Residual-NWP",
+      "n_units": 3,
+      "mse": 0.3037361549130211,
+      "mae": 0.29359663641306055,
+      "matched_mse": 0.09389891101712827,
+      "matched_mae": 0.1705420151678633,
+      "delta_mse": 0.2098372438958928,
+      "delta_mae": 0.12305462124519727,
+      "coverage": 1.0,
+      "mse_increase_units": 3,
+      "mae_increase_units": 3,
+      "delta_mse_unit_min": 0.1966148892325042,
+      "delta_mse_unit_max": 0.23453996981683953,
+      "permutation_effects": [
+        {
+          "permutation_seed": 701,
+          "delta_mse": 0.20386028663310118,
+          "delta_mae": 0.12027666220612818
+        },
+        {
+          "permutation_seed": 1701,
+          "delta_mse": 0.21118450550385048,
+          "delta_mae": 0.12368037691300189
+        },
+        {
+          "permutation_seed": 2701,
+          "delta_mse": 0.2144669395507267,
+          "delta_mae": 0.12520682461646174
+        }
+      ]
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "iTransformer",
+      "pred_len": 96,
+      "pathway": "Direct-NWP",
+      "n_units": 3,
+      "mse": 0.33510770205751006,
+      "mae": 0.2932323846643097,
+      "matched_mse": 0.08785251317734256,
+      "matched_mae": 0.1520910697725073,
+      "delta_mse": 0.2472551888801675,
+      "delta_mae": 0.14114131489180237,
+      "coverage": 0.9602810051337476,
+      "mse_increase_units": 3,
+      "mae_increase_units": 3,
+      "delta_mse_unit_min": 0.22622276766336077,
+      "delta_mse_unit_max": 0.26235194964564496,
+      "permutation_effects": [
+        {
+          "permutation_seed": 701,
+          "delta_mse": 0.24796919900699094,
+          "delta_mae": 0.14106616177616402
+        },
+        {
+          "permutation_seed": 1701,
+          "delta_mse": 0.24893732724480427,
+          "delta_mae": 0.14232149926601836
+        },
+        {
+          "permutation_seed": 2701,
+          "delta_mse": 0.24485904038870734,
+          "delta_mae": 0.14003628363322476
+        }
+      ]
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "iTransformer",
+      "pred_len": 96,
+      "pathway": "Residual-NWP",
+      "n_units": 3,
+      "mse": 0.3352867732038926,
+      "mae": 0.30288742030517235,
+      "matched_mse": 0.09010250019183523,
+      "matched_mae": 0.1607872689801845,
+      "delta_mse": 0.2451842730120574,
+      "delta_mae": 0.14210015132498782,
+      "coverage": 0.9602810051337476,
+      "mse_increase_units": 3,
+      "mae_increase_units": 3,
+      "delta_mse_unit_min": 0.22459532814198438,
+      "delta_mse_unit_max": 0.25958509053937406,
+      "permutation_effects": [
+        {
+          "permutation_seed": 701,
+          "delta_mse": 0.24671688054740348,
+          "delta_mae": 0.14249534019364546
+        },
+        {
+          "permutation_seed": 1701,
+          "delta_mse": 0.2465709810754346,
+          "delta_mae": 0.1429509102005033
+        },
+        {
+          "permutation_seed": 2701,
+          "delta_mse": 0.2422649574133341,
+          "delta_mae": 0.1408542035808147
+        }
+      ]
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "WSPR history backbone",
+      "pred_len": 16,
+      "pathway": "Direct-NWP",
+      "n_units": 10,
+      "mse": 0.29418168172301645,
+      "mae": 0.2622066514698993,
+      "matched_mse": 0.15508408435867527,
+      "matched_mae": 0.18143145007359332,
+      "delta_mse": 0.1390975973643412,
+      "delta_mae": 0.08077520139630595,
+      "coverage": 0.9978550732402125,
+      "mse_increase_units": 10,
+      "mae_increase_units": 10,
+      "delta_mse_unit_min": 0.03071790434282013,
+      "delta_mse_unit_max": 0.30756660904078886,
+      "permutation_effects": [
+        {
+          "permutation_seed": 701,
+          "delta_mse": 0.1367190789865894,
+          "delta_mae": 0.07985889304217152
+        },
+        {
+          "permutation_seed": 1701,
+          "delta_mse": 0.13797213137443093,
+          "delta_mae": 0.08009849284854184
+        },
+        {
+          "permutation_seed": 2701,
+          "delta_mse": 0.14260158173200327,
+          "delta_mae": 0.08236821829820451
+        }
+      ]
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "WSPR history backbone",
+      "pred_len": 16,
+      "pathway": "Residual-NWP",
+      "n_units": 10,
+      "mse": 0.27601168615801336,
+      "mae": 0.283736682000751,
+      "matched_mse": 0.13595179699412616,
+      "matched_mae": 0.19635743203806547,
+      "delta_mse": 0.14005988916388717,
+      "delta_mae": 0.0873792499626855,
+      "coverage": 0.9978550732402125,
+      "mse_increase_units": 10,
+      "mae_increase_units": 10,
+      "delta_mse_unit_min": 0.035948104581062894,
+      "delta_mse_unit_max": 0.28468980251402987,
+      "permutation_effects": [
+        {
+          "permutation_seed": 701,
+          "delta_mse": 0.14028411684341277,
+          "delta_mae": 0.08761882492098912
+        },
+        {
+          "permutation_seed": 1701,
+          "delta_mse": 0.13731615063628586,
+          "delta_mae": 0.08591761589025018
+        },
+        {
+          "permutation_seed": 2701,
+          "delta_mse": 0.1425794000119629,
+          "delta_mae": 0.08860130907681722
+        }
+      ]
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "WSPR history backbone",
+      "pred_len": 96,
+      "pathway": "Direct-NWP",
+      "n_units": 10,
+      "mse": 0.40411237227207564,
+      "mae": 0.31456180240111214,
+      "matched_mse": 0.21348272113520078,
+      "matched_mae": 0.2153040306398513,
+      "delta_mse": 0.1906296511368749,
+      "delta_mae": 0.09925777176126083,
+      "coverage": 0.995053444198367,
+      "mse_increase_units": 10,
+      "mae_increase_units": 10,
+      "delta_mse_unit_min": 0.06489647856952,
+      "delta_mse_unit_max": 0.37041693979938495,
+      "permutation_effects": [
+        {
+          "permutation_seed": 701,
+          "delta_mse": 0.19161952195609697,
+          "delta_mae": 0.09969271034811973
+        },
+        {
+          "permutation_seed": 1701,
+          "delta_mse": 0.18918644297371404,
+          "delta_mae": 0.09840520784632904
+        },
+        {
+          "permutation_seed": 2701,
+          "delta_mse": 0.1910829884808137,
+          "delta_mae": 0.09967539708933373
+        }
+      ]
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "WSPR history backbone",
+      "pred_len": 96,
+      "pathway": "Residual-NWP",
+      "n_units": 10,
+      "mse": 0.3846757030998081,
+      "mae": 0.335954082230817,
+      "matched_mse": 0.20835876594417208,
+      "matched_mae": 0.24146979407117408,
+      "delta_mse": 0.17631693715563598,
+      "delta_mae": 0.09448428815964295,
+      "coverage": 0.995053444198367,
+      "mse_increase_units": 10,
+      "mae_increase_units": 10,
+      "delta_mse_unit_min": 0.06226401979965552,
+      "delta_mse_unit_max": 0.347184299478807,
+      "permutation_effects": [
+        {
+          "permutation_seed": 701,
+          "delta_mse": 0.17789885626076005,
+          "delta_mae": 0.09533129460899563
+        },
+        {
+          "permutation_seed": 1701,
+          "delta_mse": 0.17439122411484062,
+          "delta_mae": 0.09321777593950688
+        },
+        {
+          "permutation_seed": 2701,
+          "delta_mse": 0.1766607310913073,
+          "delta_mae": 0.09490379393042636
+        }
+      ]
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "iTransformer",
+      "pred_len": 16,
+      "pathway": "Direct-NWP",
+      "n_units": 10,
+      "mse": 0.27644248448892456,
+      "mae": 0.2545358868276758,
+      "matched_mse": 0.1577175169169112,
+      "matched_mae": 0.1840662046981194,
+      "delta_mse": 0.11872496757201334,
+      "delta_mae": 0.07046968212955643,
+      "coverage": 0.9978550732402125,
+      "mse_increase_units": 10,
+      "mae_increase_units": 10,
+      "delta_mse_unit_min": 0.023444148591283062,
+      "delta_mse_unit_max": 0.26859137946048417,
+      "permutation_effects": [
+        {
+          "permutation_seed": 701,
+          "delta_mse": 0.11712577827937058,
+          "delta_mae": 0.06981145057768923
+        },
+        {
+          "permutation_seed": 1701,
+          "delta_mse": 0.11690651291528144,
+          "delta_mae": 0.06943246685653294
+        },
+        {
+          "permutation_seed": 2701,
+          "delta_mse": 0.122142611521388,
+          "delta_mae": 0.0721651289544471
+        }
+      ]
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "iTransformer",
+      "pred_len": 16,
+      "pathway": "Residual-NWP",
+      "n_units": 10,
+      "mse": 0.2523183306643653,
+      "mae": 0.265491899006924,
+      "matched_mse": 0.14645875992349291,
+      "matched_mae": 0.19767735973787467,
+      "delta_mse": 0.10585957074087238,
+      "delta_mae": 0.06781453926904932,
+      "coverage": 0.9978550732402125,
+      "mse_increase_units": 10,
+      "mae_increase_units": 10,
+      "delta_mse_unit_min": 0.030750322481147962,
+      "delta_mse_unit_max": 0.2230789853106243,
+      "permutation_effects": [
+        {
+          "permutation_seed": 701,
+          "delta_mse": 0.10625368807433533,
+          "delta_mae": 0.0680571282952522
+        },
+        {
+          "permutation_seed": 1701,
+          "delta_mse": 0.10358180228651533,
+          "delta_mae": 0.06679207980284856
+        },
+        {
+          "permutation_seed": 2701,
+          "delta_mse": 0.10774322186176649,
+          "delta_mae": 0.0685944097090472
+        }
+      ]
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "iTransformer",
+      "pred_len": 96,
+      "pathway": "Direct-NWP",
+      "n_units": 10,
+      "mse": 0.39575062670886857,
+      "mae": 0.31040283143254827,
+      "matched_mse": 0.2203661992208994,
+      "matched_mae": 0.21958481573607694,
+      "delta_mse": 0.17538442748796917,
+      "delta_mae": 0.09081801569647131,
+      "coverage": 0.995053444198367,
+      "mse_increase_units": 10,
+      "mae_increase_units": 10,
+      "delta_mse_unit_min": 0.06282451970704267,
+      "delta_mse_unit_max": 0.3674713932352273,
+      "permutation_effects": [
+        {
+          "permutation_seed": 701,
+          "delta_mse": 0.17661563350222292,
+          "delta_mae": 0.09122551657649887
+        },
+        {
+          "permutation_seed": 1701,
+          "delta_mse": 0.17401043925407694,
+          "delta_mae": 0.0900201191639781
+        },
+        {
+          "permutation_seed": 2701,
+          "delta_mse": 0.1755272097076077,
+          "delta_mae": 0.09120841134893694
+        }
+      ]
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "iTransformer",
+      "pred_len": 96,
+      "pathway": "Residual-NWP",
+      "n_units": 10,
+      "mse": 0.35875104391661367,
+      "mae": 0.32164647058166285,
+      "matched_mse": 0.20388530743704053,
+      "matched_mae": 0.23520604564737388,
+      "delta_mse": 0.1548657364795731,
+      "delta_mae": 0.08644042493428898,
+      "coverage": 0.995053444198367,
+      "mse_increase_units": 10,
+      "mae_increase_units": 10,
+      "delta_mse_unit_min": 0.04260987123109639,
+      "delta_mse_unit_max": 0.266853619299925,
+      "permutation_effects": [
+        {
+          "permutation_seed": 701,
+          "delta_mse": 0.1569100436333739,
+          "delta_mae": 0.08738759900544077
+        },
+        {
+          "permutation_seed": 1701,
+          "delta_mse": 0.15275367393774042,
+          "delta_mae": 0.08506163816807498
+        },
+        {
+          "permutation_seed": 2701,
+          "delta_mse": 0.15493349186760497,
+          "delta_mae": 0.08687203762935118
+        }
+      ]
+    }
+  ],
+  "gate_tasks": [
+    {
+      "dataset": "GEFCom",
+      "backbone": "WSPR history backbone",
+      "pred_len": 24,
+      "variant": "adaptive",
+      "mse": 0.09057515839538766,
+      "mae": 0.16437042306694227,
+      "delta_mse": 0.0,
+      "delta_mae": 0.0,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 0,
+      "adaptive_lower_mae_units": 0
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "WSPR history backbone",
+      "pred_len": 24,
+      "variant": "constant_05",
+      "mse": 0.13071090615716258,
+      "mae": 0.234464389369794,
+      "delta_mse": 0.04013574776177493,
+      "delta_mae": 0.07009396630285174,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 3,
+      "adaptive_lower_mae_units": 3
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "WSPR history backbone",
+      "pred_len": 24,
+      "variant": "constant_1",
+      "mse": 0.2523487845878015,
+      "mae": 0.4094318368606451,
+      "delta_mse": 0.16177362619241387,
+      "delta_mae": 0.24506141379370283,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 3,
+      "adaptive_lower_mae_units": 3
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "WSPR history backbone",
+      "pred_len": 24,
+      "variant": "internal_base",
+      "mse": 0.4103439662351246,
+      "mae": 0.5154367126521581,
+      "delta_mse": 0.31976880783973693,
+      "delta_mae": 0.35106628958521585,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 3,
+      "adaptive_lower_mae_units": 3
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "WSPR history backbone",
+      "pred_len": 24,
+      "variant": "validation_constant",
+      "mse": 0.11823316663586143,
+      "mae": 0.23089478621859588,
+      "delta_mse": 0.02765800824047377,
+      "delta_mae": 0.06652436315165362,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 3,
+      "adaptive_lower_mae_units": 3
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "WSPR history backbone",
+      "pred_len": 96,
+      "variant": "adaptive",
+      "mse": 0.08873449494682223,
+      "mae": 0.16201497620317906,
+      "delta_mse": 0.0,
+      "delta_mae": 0.0,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 0,
+      "adaptive_lower_mae_units": 0
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "WSPR history backbone",
+      "pred_len": 96,
+      "variant": "constant_05",
+      "mse": 0.14552503429816066,
+      "mae": 0.27379080222562774,
+      "delta_mse": 0.05679053935133844,
+      "delta_mae": 0.1117758260224487,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 3,
+      "adaptive_lower_mae_units": 3
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "WSPR history backbone",
+      "pred_len": 96,
+      "variant": "constant_1",
+      "mse": 0.321791278565237,
+      "mae": 0.46896508916740726,
+      "delta_mse": 0.23305678361841473,
+      "delta_mae": 0.30695011296422825,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 3,
+      "adaptive_lower_mae_units": 3
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "WSPR history backbone",
+      "pred_len": 96,
+      "variant": "internal_base",
+      "mse": 0.43980226386978233,
+      "mae": 0.5429303416225244,
+      "delta_mse": 0.3510677689229601,
+      "delta_mae": 0.38091536541934534,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 3,
+      "adaptive_lower_mae_units": 3
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "WSPR history backbone",
+      "pred_len": 96,
+      "variant": "validation_constant",
+      "mse": 0.13371714671161702,
+      "mae": 0.26588533156646693,
+      "delta_mse": 0.04498265176479479,
+      "delta_mae": 0.1038703553632879,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 3,
+      "adaptive_lower_mae_units": 3
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "iTransformer",
+      "pred_len": 24,
+      "variant": "adaptive",
+      "mse": 0.09389891101712827,
+      "mae": 0.1705420151678633,
+      "delta_mse": 0.0,
+      "delta_mae": 0.0,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 0,
+      "adaptive_lower_mae_units": 0
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "iTransformer",
+      "pred_len": 24,
+      "variant": "constant_05",
+      "mse": 0.14708343440858923,
+      "mae": 0.2885076346046295,
+      "delta_mse": 0.053184523391460965,
+      "delta_mae": 0.11796561943676621,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 3,
+      "adaptive_lower_mae_units": 3
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "iTransformer",
+      "pred_len": 24,
+      "variant": "constant_1",
+      "mse": 0.3968805005044402,
+      "mae": 0.5400288014342366,
+      "delta_mse": 0.3029815894873119,
+      "delta_mae": 0.36948678626637327,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 3,
+      "adaptive_lower_mae_units": 3
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "iTransformer",
+      "pred_len": 24,
+      "variant": "internal_base",
+      "mse": 0.30723471790402357,
+      "mae": 0.42984898961645196,
+      "delta_mse": 0.2133358068868953,
+      "delta_mae": 0.25930697444858863,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 3,
+      "adaptive_lower_mae_units": 3
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "iTransformer",
+      "pred_len": 24,
+      "variant": "validation_constant",
+      "mse": 0.14356500404013775,
+      "mae": 0.2696244605099366,
+      "delta_mse": 0.049666093023009485,
+      "delta_mae": 0.09908244534207329,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 3,
+      "adaptive_lower_mae_units": 3
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "iTransformer",
+      "pred_len": 96,
+      "variant": "adaptive",
+      "mse": 0.09073224494483507,
+      "mae": 0.16115439926492156,
+      "delta_mse": 0.0,
+      "delta_mae": 0.0,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 0,
+      "adaptive_lower_mae_units": 0
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "iTransformer",
+      "pred_len": 96,
+      "variant": "constant_05",
+      "mse": 0.19170804654448287,
+      "mae": 0.36342375613788186,
+      "delta_mse": 0.10097580159964778,
+      "delta_mae": 0.20226935687296033,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 3,
+      "adaptive_lower_mae_units": 3
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "iTransformer",
+      "pred_len": 96,
+      "variant": "constant_1",
+      "mse": 0.606430965110774,
+      "mae": 0.672411146303939,
+      "delta_mse": 0.5156987201659389,
+      "delta_mae": 0.5112567470390174,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 3,
+      "adaptive_lower_mae_units": 3
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "iTransformer",
+      "pred_len": 96,
+      "variant": "internal_base",
+      "mse": 0.29173734383202604,
+      "mae": 0.4056209982958949,
+      "delta_mse": 0.20100509888719098,
+      "delta_mae": 0.2444665990309733,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 3,
+      "adaptive_lower_mae_units": 3
+    },
+    {
+      "dataset": "GEFCom",
+      "backbone": "iTransformer",
+      "pred_len": 96,
+      "variant": "validation_constant",
+      "mse": 0.1649484984029531,
+      "mae": 0.3028163921706687,
+      "delta_mse": 0.07421625345811801,
+      "delta_mae": 0.14166199290574713,
+      "n_units": 3,
+      "adaptive_lower_mse_units": 3,
+      "adaptive_lower_mae_units": 3
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "WSPR history backbone",
+      "pred_len": 16,
+      "variant": "adaptive",
+      "mse": 0.13560264363392055,
+      "mae": 0.1960777386174155,
+      "delta_mse": 0.0,
+      "delta_mae": 0.0,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 0,
+      "adaptive_lower_mae_units": 0
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "WSPR history backbone",
+      "pred_len": 16,
+      "variant": "constant_05",
+      "mse": 0.15727384293446725,
+      "mae": 0.233140002816962,
+      "delta_mse": 0.021671199300546697,
+      "delta_mae": 0.037062264199546495,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 7,
+      "adaptive_lower_mae_units": 10
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "WSPR history backbone",
+      "pred_len": 16,
+      "variant": "constant_1",
+      "mse": 0.20864960253322717,
+      "mae": 0.30081884633831546,
+      "delta_mse": 0.07304695889930661,
+      "delta_mae": 0.10474110772089994,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 10,
+      "adaptive_lower_mae_units": 10
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "WSPR history backbone",
+      "pred_len": 16,
+      "variant": "internal_base",
+      "mse": 0.3633850831176223,
+      "mae": 0.43489028441205047,
+      "delta_mse": 0.22778243948370175,
+      "delta_mae": 0.23881254579463493,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 10,
+      "adaptive_lower_mae_units": 10
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "WSPR history backbone",
+      "pred_len": 16,
+      "variant": "validation_constant",
+      "mse": 0.13661583880160338,
+      "mae": 0.20110006039739528,
+      "delta_mse": 0.0010131951676828246,
+      "delta_mae": 0.005022321779979774,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 5,
+      "adaptive_lower_mae_units": 9
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "WSPR history backbone",
+      "pred_len": 96,
+      "variant": "adaptive",
+      "mse": 0.20769058016352768,
+      "mae": 0.24107789945029842,
+      "delta_mse": 0.0,
+      "delta_mae": 0.0,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 0,
+      "adaptive_lower_mae_units": 0
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "WSPR history backbone",
+      "pred_len": 96,
+      "variant": "constant_05",
+      "mse": 0.24858164503066635,
+      "mae": 0.2911687286212555,
+      "delta_mse": 0.04089106486713867,
+      "delta_mae": 0.050090829170957064,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 9,
+      "adaptive_lower_mae_units": 9
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "WSPR history backbone",
+      "pred_len": 96,
+      "variant": "constant_1",
+      "mse": 0.33286932386272144,
+      "mae": 0.3984588681318193,
+      "delta_mse": 0.12517874369919377,
+      "delta_mae": 0.1573809686815209,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 10,
+      "adaptive_lower_mae_units": 10
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "WSPR history backbone",
+      "pred_len": 96,
+      "variant": "internal_base",
+      "mse": 0.485585961608153,
+      "mae": 0.5032873816507728,
+      "delta_mse": 0.27789538144462533,
+      "delta_mae": 0.26220948220047435,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 10,
+      "adaptive_lower_mae_units": 10
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "WSPR history backbone",
+      "pred_len": 96,
+      "variant": "validation_constant",
+      "mse": 0.22396973494836755,
+      "mae": 0.26500275773107,
+      "delta_mse": 0.016279154784839864,
+      "delta_mae": 0.02392485828077159,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 9,
+      "adaptive_lower_mae_units": 9
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "iTransformer",
+      "pred_len": 16,
+      "variant": "adaptive",
+      "mse": 0.14607405768500617,
+      "mae": 0.19742310833417676,
+      "delta_mse": 0.0,
+      "delta_mae": 0.0,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 0,
+      "adaptive_lower_mae_units": 0
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "iTransformer",
+      "pred_len": 16,
+      "variant": "constant_05",
+      "mse": 0.16622225013115502,
+      "mae": 0.22695563053594872,
+      "delta_mse": 0.020148192446148863,
+      "delta_mae": 0.02953252220177197,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 8,
+      "adaptive_lower_mae_units": 10
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "iTransformer",
+      "pred_len": 16,
+      "variant": "constant_1",
+      "mse": 0.2855542726706444,
+      "mae": 0.4163571465381037,
+      "delta_mse": 0.13948021498563828,
+      "delta_mae": 0.21893403820392693,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 10,
+      "adaptive_lower_mae_units": 10
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "iTransformer",
+      "pred_len": 16,
+      "variant": "internal_base",
+      "mse": 0.3605635765629304,
+      "mae": 0.42359013539379553,
+      "delta_mse": 0.21448951887792425,
+      "delta_mae": 0.22616702705961877,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 10,
+      "adaptive_lower_mae_units": 10
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "iTransformer",
+      "pred_len": 16,
+      "variant": "validation_constant",
+      "mse": 0.16315532868712984,
+      "mae": 0.22825534382762785,
+      "delta_mse": 0.017081271002123682,
+      "delta_mae": 0.030832235493451106,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 8,
+      "adaptive_lower_mae_units": 10
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "iTransformer",
+      "pred_len": 96,
+      "variant": "adaptive",
+      "mse": 0.20313838591221084,
+      "mae": 0.23484686818821268,
+      "delta_mse": 0.0,
+      "delta_mae": 0.0,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 0,
+      "adaptive_lower_mae_units": 0
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "iTransformer",
+      "pred_len": 96,
+      "variant": "constant_05",
+      "mse": 0.2653923352723683,
+      "mae": 0.3210533830820174,
+      "delta_mse": 0.06225394936015743,
+      "delta_mae": 0.08620651489380471,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 10,
+      "adaptive_lower_mae_units": 10
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "iTransformer",
+      "pred_len": 96,
+      "variant": "constant_1",
+      "mse": 0.3886308338099728,
+      "mae": 0.48361448972378296,
+      "delta_mse": 0.18549244789776195,
+      "delta_mae": 0.24876762153557025,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 10,
+      "adaptive_lower_mae_units": 10
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "iTransformer",
+      "pred_len": 96,
+      "variant": "internal_base",
+      "mse": 0.5836293698839723,
+      "mae": 0.558420556302308,
+      "delta_mse": 0.3804909839717615,
+      "delta_mae": 0.32357368811409537,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 10,
+      "adaptive_lower_mae_units": 10
+    },
+    {
+      "dataset": "PVOD",
+      "backbone": "iTransformer",
+      "pred_len": 96,
+      "variant": "validation_constant",
+      "mse": 0.2418245336645268,
+      "mae": 0.30139584731211555,
+      "delta_mse": 0.03868614775231597,
+      "delta_mae": 0.06654897912390284,
+      "n_units": 10,
+      "adaptive_lower_mse_units": 10,
+      "adaptive_lower_mae_units": 10
+    }
+  ]
+}

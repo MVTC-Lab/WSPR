@@ -1,0 +1,13 @@
+{
+  "status": "paper-setting specification; not the complete original run-command archive",
+  "seeds": [2024, 2025, 2026],
+  "shared": {"d_model": 128, "d_ff": 256, "n_heads": 8, "e_layers": 2, "d_layers": 1, "dropout": 0.05, "batch_size": 32, "learning_rate": 0.001, "train_epochs": 20, "patience": 5, "loss": "MSE", "num_workers": 0, "label_len": 0, "reliability_target_idx": -1, "residual_l1_weight": 0.0},
+  "datasets": {
+    "PVOD": {"root": "data/PVOD_pre80", "file": "PVOD_station00_nwp.csv", "units": 10, "known_channels": 8, "freq": "t", "tasks": {"16": 96, "96": 96}},
+    "GEFCom": {"root": "data/GEFCom2014Solar_deaccum_v1", "file": "GEFCom2014Solar_zone01_nwp.csv", "units": 3, "known_channels": 12, "freq": "h", "tasks": {"24": 96, "96": 168}}
+  },
+  "models": {
+    "patchtst": {"history": "PatchTST", "direct": "DirectNWP", "residual": "WSPR"},
+    "itransformer": {"history": "iTransformer", "direct": "DirectNWP_iTransformer", "residual": "WSPR_iTransformer"}
+  }
+}

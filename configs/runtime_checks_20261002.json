@@ -1,0 +1,551 @@
+{
+  "primary": {
+    "status": "PASS",
+    "scope": "synthetic CPU forward, split/scaling, CLI and training guard",
+    "python": "3.8.20",
+    "torch": "2.4.0+cpu",
+    "numpy": "1.23.5",
+    "pandas": "1.5.3",
+    "model_task_cases": 24,
+    "cases": [
+      {
+        "dataset": "PVOD",
+        "history": 96,
+        "horizon": 16,
+        "backbone": "patchtst",
+        "pathway": "history",
+        "model": "PatchTST",
+        "output_shape": [
+          2,
+          16,
+          9
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 291856,
+        "additional_head_parameters": 0
+      },
+      {
+        "dataset": "PVOD",
+        "history": 96,
+        "horizon": 16,
+        "backbone": "patchtst",
+        "pathway": "direct",
+        "model": "DirectNWP",
+        "output_shape": [
+          2,
+          16,
+          9
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 440233,
+        "additional_head_parameters": 148377
+      },
+      {
+        "dataset": "PVOD",
+        "history": 96,
+        "horizon": 16,
+        "backbone": "patchtst",
+        "pathway": "residual",
+        "model": "WSPR",
+        "output_shape": [
+          2,
+          16,
+          9
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 440748,
+        "additional_head_parameters": 148892
+      },
+      {
+        "dataset": "PVOD",
+        "history": 96,
+        "horizon": 16,
+        "backbone": "itransformer",
+        "pathway": "history",
+        "model": "iTransformer",
+        "output_shape": [
+          2,
+          16,
+          9
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 279696,
+        "additional_head_parameters": 0
+      },
+      {
+        "dataset": "PVOD",
+        "history": 96,
+        "horizon": 16,
+        "backbone": "itransformer",
+        "pathway": "direct",
+        "model": "DirectNWP_iTransformer",
+        "output_shape": [
+          2,
+          16,
+          9
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 428073,
+        "additional_head_parameters": 148377
+      },
+      {
+        "dataset": "PVOD",
+        "history": 96,
+        "horizon": 16,
+        "backbone": "itransformer",
+        "pathway": "residual",
+        "model": "WSPR_iTransformer",
+        "output_shape": [
+          2,
+          16,
+          9
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 428588,
+        "additional_head_parameters": 148892
+      },
+      {
+        "dataset": "PVOD",
+        "history": 96,
+        "horizon": 96,
+        "backbone": "patchtst",
+        "pathway": "history",
+        "model": "PatchTST",
+        "output_shape": [
+          2,
+          96,
+          9
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 414816,
+        "additional_head_parameters": 0
+      },
+      {
+        "dataset": "PVOD",
+        "history": 96,
+        "horizon": 96,
+        "backbone": "patchtst",
+        "pathway": "direct",
+        "model": "DirectNWP",
+        "output_shape": [
+          2,
+          96,
+          9
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 563193,
+        "additional_head_parameters": 148377
+      },
+      {
+        "dataset": "PVOD",
+        "history": 96,
+        "horizon": 96,
+        "backbone": "patchtst",
+        "pathway": "residual",
+        "model": "WSPR",
+        "output_shape": [
+          2,
+          96,
+          9
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 563708,
+        "additional_head_parameters": 148892
+      },
+      {
+        "dataset": "PVOD",
+        "history": 96,
+        "horizon": 96,
+        "backbone": "itransformer",
+        "pathway": "history",
+        "model": "iTransformer",
+        "output_shape": [
+          2,
+          96,
+          9
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 290016,
+        "additional_head_parameters": 0
+      },
+      {
+        "dataset": "PVOD",
+        "history": 96,
+        "horizon": 96,
+        "backbone": "itransformer",
+        "pathway": "direct",
+        "model": "DirectNWP_iTransformer",
+        "output_shape": [
+          2,
+          96,
+          9
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 438393,
+        "additional_head_parameters": 148377
+      },
+      {
+        "dataset": "PVOD",
+        "history": 96,
+        "horizon": 96,
+        "backbone": "itransformer",
+        "pathway": "residual",
+        "model": "WSPR_iTransformer",
+        "output_shape": [
+          2,
+          96,
+          9
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 438908,
+        "additional_head_parameters": 148892
+      },
+      {
+        "dataset": "GEFCom",
+        "history": 96,
+        "horizon": 24,
+        "backbone": "patchtst",
+        "pathway": "history",
+        "model": "PatchTST",
+        "output_shape": [
+          2,
+          24,
+          13
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 304152,
+        "additional_head_parameters": 0
+      },
+      {
+        "dataset": "GEFCom",
+        "history": 96,
+        "horizon": 24,
+        "backbone": "patchtst",
+        "pathway": "direct",
+        "model": "DirectNWP",
+        "output_shape": [
+          2,
+          24,
+          13
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 458681,
+        "additional_head_parameters": 154529
+      },
+      {
+        "dataset": "GEFCom",
+        "history": 96,
+        "horizon": 24,
+        "backbone": "patchtst",
+        "pathway": "residual",
+        "model": "WSPR",
+        "output_shape": [
+          2,
+          24,
+          13
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 459196,
+        "additional_head_parameters": 155044
+      },
+      {
+        "dataset": "GEFCom",
+        "history": 96,
+        "horizon": 24,
+        "backbone": "itransformer",
+        "pathway": "history",
+        "model": "iTransformer",
+        "output_shape": [
+          2,
+          24,
+          13
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 280728,
+        "additional_head_parameters": 0
+      },
+      {
+        "dataset": "GEFCom",
+        "history": 96,
+        "horizon": 24,
+        "backbone": "itransformer",
+        "pathway": "direct",
+        "model": "DirectNWP_iTransformer",
+        "output_shape": [
+          2,
+          24,
+          13
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 435257,
+        "additional_head_parameters": 154529
+      },
+      {
+        "dataset": "GEFCom",
+        "history": 96,
+        "horizon": 24,
+        "backbone": "itransformer",
+        "pathway": "residual",
+        "model": "WSPR_iTransformer",
+        "output_shape": [
+          2,
+          24,
+          13
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 435772,
+        "additional_head_parameters": 155044
+      },
+      {
+        "dataset": "GEFCom",
+        "history": 168,
+        "horizon": 96,
+        "backbone": "patchtst",
+        "pathway": "history",
+        "model": "PatchTST",
+        "output_shape": [
+          2,
+          96,
+          13
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 525408,
+        "additional_head_parameters": 0
+      },
+      {
+        "dataset": "GEFCom",
+        "history": 168,
+        "horizon": 96,
+        "backbone": "patchtst",
+        "pathway": "direct",
+        "model": "DirectNWP",
+        "output_shape": [
+          2,
+          96,
+          13
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 679937,
+        "additional_head_parameters": 154529
+      },
+      {
+        "dataset": "GEFCom",
+        "history": 168,
+        "horizon": 96,
+        "backbone": "patchtst",
+        "pathway": "residual",
+        "model": "WSPR",
+        "output_shape": [
+          2,
+          96,
+          13
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 680452,
+        "additional_head_parameters": 155044
+      },
+      {
+        "dataset": "GEFCom",
+        "history": 168,
+        "horizon": 96,
+        "backbone": "itransformer",
+        "pathway": "history",
+        "model": "iTransformer",
+        "output_shape": [
+          2,
+          96,
+          13
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 299232,
+        "additional_head_parameters": 0
+      },
+      {
+        "dataset": "GEFCom",
+        "history": 168,
+        "horizon": 96,
+        "backbone": "itransformer",
+        "pathway": "direct",
+        "model": "DirectNWP_iTransformer",
+        "output_shape": [
+          2,
+          96,
+          13
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 453761,
+        "additional_head_parameters": 154529
+      },
+      {
+        "dataset": "GEFCom",
+        "history": 168,
+        "horizon": 96,
+        "backbone": "itransformer",
+        "pathway": "residual",
+        "model": "WSPR_iTransformer",
+        "output_shape": [
+          2,
+          96,
+          13
+        ],
+        "finite": true,
+        "future_target_invariance_max_abs": 0.0,
+        "parameters": 454276,
+        "additional_head_parameters": 155044
+      }
+    ],
+    "synthetic_window_counts": {
+      "train": 589,
+      "val": 85,
+      "test": 185
+    },
+    "cli_help": "PASS",
+    "training_guard": "PASS",
+    "training_performed": false,
+    "backward_or_optimizer_step": false,
+    "limitations": "Synthetic CPU checks only; environment installation and checkpoint replay require separate evidence."
+  },
+  "independent": {
+    "status": "PASS",
+    "tests": 9,
+    "model_cases": [
+      {
+        "backbone": "patchtst",
+        "pathway": "history",
+        "horizon_hours": 4,
+        "finite": true,
+        "future_target_invariant": true,
+        "state_unchanged": true,
+        "parameters": 273412
+      },
+      {
+        "backbone": "patchtst",
+        "pathway": "direct",
+        "horizon_hours": 4,
+        "finite": true,
+        "future_target_invariant": true,
+        "state_unchanged": true,
+        "parameters": 420251
+      },
+      {
+        "backbone": "patchtst",
+        "pathway": "residual",
+        "horizon_hours": 4,
+        "finite": true,
+        "future_target_invariant": true,
+        "state_unchanged": true,
+        "parameters": 420766
+      },
+      {
+        "backbone": "itransformer",
+        "pathway": "history",
+        "horizon_hours": 4,
+        "finite": true,
+        "future_target_invariant": true,
+        "state_unchanged": true,
+        "parameters": 278148
+      },
+      {
+        "backbone": "itransformer",
+        "pathway": "direct",
+        "horizon_hours": 4,
+        "finite": true,
+        "future_target_invariant": true,
+        "state_unchanged": true,
+        "parameters": 424987
+      },
+      {
+        "backbone": "itransformer",
+        "pathway": "residual",
+        "horizon_hours": 4,
+        "finite": true,
+        "future_target_invariant": true,
+        "state_unchanged": true,
+        "parameters": 425502
+      },
+      {
+        "backbone": "patchtst",
+        "pathway": "history",
+        "horizon_hours": 24,
+        "finite": true,
+        "future_target_invariant": true,
+        "state_unchanged": true,
+        "parameters": 304152
+      },
+      {
+        "backbone": "patchtst",
+        "pathway": "direct",
+        "horizon_hours": 24,
+        "finite": true,
+        "future_target_invariant": true,
+        "state_unchanged": true,
+        "parameters": 450991
+      },
+      {
+        "backbone": "patchtst",
+        "pathway": "residual",
+        "horizon_hours": 24,
+        "finite": true,
+        "future_target_invariant": true,
+        "state_unchanged": true,
+        "parameters": 451506
+      },
+      {
+        "backbone": "itransformer",
+        "pathway": "history",
+        "horizon_hours": 24,
+        "finite": true,
+        "future_target_invariant": true,
+        "state_unchanged": true,
+        "parameters": 280728
+      },
+      {
+        "backbone": "itransformer",
+        "pathway": "direct",
+        "horizon_hours": 24,
+        "finite": true,
+        "future_target_invariant": true,
+        "state_unchanged": true,
+        "parameters": 427567
+      },
+      {
+        "backbone": "itransformer",
+        "pathway": "residual",
+        "horizon_hours": 24,
+        "finite": true,
+        "future_target_invariant": true,
+        "state_unchanged": true,
+        "parameters": 428082
+      }
+    ],
+    "python": "3.8.20",
+    "torch": "2.4.0+cpu",
+    "numpy": "1.23.5",
+    "pandas": "1.5.3",
+    "training_performed": false,
+    "scope": "Synthetic CPU/data-contract checks, not CUDA accuracy replay"
+  }
+}
