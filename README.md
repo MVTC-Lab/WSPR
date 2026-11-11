@@ -1,8 +1,8 @@
-# WSPR：基于历史预测锚点的自适应天气残差校正
+# WSPR：基于数值天气预报与门控残差修正的光伏功率预测
 
 中文 | [English](README-EN.md)
 
-本仓库提供论文 **Direct and residual NWP integration for photovoltaic power forecasting: Metric, subset and temporal dependence** 的模型实现、数据准备工具、实验配置与聚合结果。作者：Xingyu Meng、Liejun Wang、Feng Yan，Xinjiang University。
+本仓库提供论文 **WSPR: Gated residual correction with numerical weather prediction for photovoltaic power forecasting** 的模型实现、数据准备工具、实验配置与聚合结果。作者：Xingyu Meng、Liejun Wang、Feng Yan，Xinjiang University。
 
 ## 项目简介
 
@@ -145,7 +145,7 @@ WSPR/
 
 ```bibtex
 @misc{meng2026wspr,
-  title  = {Direct and residual NWP integration for photovoltaic power forecasting: Metric, subset and temporal dependence},
+  title  = {WSPR: Gated residual correction with numerical weather prediction for photovoltaic power forecasting},
   author = {Meng, Xingyu and Wang, Liejun and Yan, Feng},
   year   = {2026},
   note   = {Manuscript},

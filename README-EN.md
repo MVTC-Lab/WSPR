@@ -1,10 +1,10 @@
-# WSPR: History-Anchored NWP Residual Correction for PV Forecasting
+# WSPR: Gated residual correction with numerical weather prediction for photovoltaic power forecasting
 
 [中文](README.md) | English
 
 Implementation and experimental results for:
 
-**Direct and residual NWP integration for photovoltaic power forecasting: Metric, subset and temporal dependence**  
+**WSPR: Gated residual correction with numerical weather prediction for photovoltaic power forecasting**  
 Xingyu Meng, Liejun Wang and Feng Yan  
 Xinjiang University
 
@@ -172,7 +172,7 @@ The work is currently a manuscript. Its bibliographic information is:
 
 ```bibtex
 @misc{meng2026wspr,
-  title  = {Direct and residual NWP integration for photovoltaic power forecasting: Metric, subset and temporal dependence},
+  title  = {WSPR: Gated residual correction with numerical weather prediction for photovoltaic power forecasting},
   author = {Meng, Xingyu and Wang, Liejun and Yan, Feng},
   year   = {2026},
   note   = {Manuscript},

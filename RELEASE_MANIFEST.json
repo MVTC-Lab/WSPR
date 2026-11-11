@@ -320,15 +320,15 @@
     },
     {
       "path": "README-EN.md",
-      "bytes": 11093,
-      "sha256": "122304ef7a222e0971b2d377606ce235fdef4f77ef123de01808ec9507193b7f",
+      "bytes": 11108,
+      "sha256": "77895b6f7938be4c755221d035c7e20a5bcf11ce8c498632d84c6259fe9a92de",
       "release_adapted": true,
       "documentation_updated": "2026-11-11"
     },
     {
       "path": "README.md",
-      "bytes": 8852,
-      "sha256": "78281398ba1711740691bb0d71f02d46fea2422877c66f9a2ea5d9e0bc125e9b",
+      "bytes": 8844,
+      "sha256": "c4e078d5e12153d7f2711e291fb942b80f3b32354313cefc2ca1ad19c051f361",
       "source": "release-preparation",
       "source_sha256": null,
       "previous_candidate_sha256": "f82fed047b22d037410112ffba68e2f2a8d14ecdbb98607fc04aeaa7258b71e6",
@@ -585,17 +585,18 @@
     },
     {
       "path": "Electronic_Supplement.zip",
-      "bytes": 3414634,
-      "sha256": "3f84dbfba00ad64ee8519fae83c278e8382c7345add75cc568ad6e346cae9721",
+      "bytes": 3414771,
+      "sha256": "b2ff9b1e165299df88dd35fdb86f439571acad67e7a61189cdc3ff1adb453f34",
       "source": "companion numerical/protocol records",
       "source_sha256": "3f84dbfba00ad64ee8519fae83c278e8382c7345add75cc568ad6e346cae9721"
     }
   ],
-  "revision": "2026-11-09-readme-simplification",
+  "revision": "2026-11-11-final-title-and-vector-figure",
   "updated": "2026-11-11",
   "authors": [
     "Xingyu Meng",
     "Liejun Wang",
     "Feng Yan"
-  ]
+  ],
+  "manuscript_title": "WSPR: Gated residual correction with numerical weather prediction for photovoltaic power forecasting"
 }
