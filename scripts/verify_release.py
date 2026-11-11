@@ -5,7 +5,8 @@ import json
 import re
 import subprocess
 import sys
-from pathlib import Path
+import zipfile
+from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
 LOCAL_PACKAGES = {'models', 'layers', 'utils', 'exp', 'data_provider'}
@@ -55,6 +56,7 @@ def main():
         'ipv4-address': r'\b(?:\d{1,3}\.){3}\d{1,3}\b',
     }
     python_files = 0
+    archives_checked = 0
     for name in sorted(candidates & expected):
         path = ROOT / name
         if path.is_symlink() or ROOT not in path.resolve().parents:
@@ -65,6 +67,22 @@ def main():
             issues.append('Oversize candidate: ' + name)
         if name in records and digest(path) != records[name]['sha256']:
             issues.append('Hash mismatch: ' + name)
+        if path.suffix.lower() == '.zip':
+            archives_checked += 1
+            try:
+                with zipfile.ZipFile(path) as archive:
+                    if archive.testzip() is not None:
+                        issues.append('Archive CRC mismatch: ' + name)
+                    members = archive.namelist()
+                    if len(members) != len(set(members)):
+                        issues.append('Duplicate archive member: ' + name)
+                    for member in members:
+                        pure = PurePosixPath(member)
+                        if pure.is_absolute() or '..' in pure.parts or '\\' in member:
+                            issues.append('Unsafe archive member: ' + name)
+            except (zipfile.BadZipFile, RuntimeError, OSError):
+                issues.append('Unreadable archive: ' + name)
+            continue
         content = raw.decode('utf-8-sig')
         for label, pattern in patterns.items():
             if re.search(pattern, content):
@@ -106,7 +124,7 @@ def main():
     posthoc = summarize_posthoc()
     result = {'status': 'PASS' if not issues else 'FAIL', 'candidate_files': len(candidates),
               'inventory_mode': mode, 'registry_task_groups': registry_check['task_pathway_groups'],
-              'python_files_parsed': python_files, 'frozen_model_hashes_checked': len(MODEL_HASHES),
+              'python_files_parsed': python_files, 'archives_checked': archives_checked, 'frozen_model_hashes_checked': len(MODEL_HASHES),
               'primary_matrix_runs': count, 'total_bytes': sum((ROOT/n).stat().st_size for n in candidates),
               'independent_validation_fits': independent['fits'],
               'posthoc_scalar_checks': posthoc['status'],
