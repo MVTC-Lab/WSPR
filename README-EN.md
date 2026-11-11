@@ -5,7 +5,7 @@
 Implementation and experimental results for:
 
 **Direct and residual NWP integration for photovoltaic power forecasting: Metric, subset and temporal dependence**  
-Xingyu Meng and Feng Yan  
+Xingyu Meng, Liejun Wang and Feng Yan  
 Xinjiang University
 
 ## Overview
@@ -162,6 +162,10 @@ utils/           Metrics, losses and training utilities
 run.py           Primary training and evaluation entry point
 ```
 
+## Companion numerical records
+
+[Electronic_Supplement.zip](Electronic_Supplement.zip) contains analysis results, split records, protocols and integrity manifests accompanying the paper and supplementary PDF. It is distributed separately through this repository. Complete original datasets, trained weights and prediction arrays are not included. Extract the archive and run `verify_package.py` to check its integrity. Paths beginning with `electronic_supplement/` in the paper refer to the extracted archive root.
+
 ## Citation
 
 The work is currently a manuscript. Its bibliographic information is:
@@ -169,7 +173,7 @@ The work is currently a manuscript. Its bibliographic information is:
 ```bibtex
 @misc{meng2026wspr,
   title  = {Direct and residual NWP integration for photovoltaic power forecasting: Metric, subset and temporal dependence},
-  author = {Meng, Xingyu and Yan, Feng},
+  author = {Meng, Xingyu and Wang, Liejun and Yan, Feng},
   year   = {2026},
   note   = {Manuscript},
   url    = {https://github.com/MVTC-Lab/WSPR}

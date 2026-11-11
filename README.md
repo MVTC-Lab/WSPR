@@ -2,7 +2,7 @@
 
 中文 | [English](README-EN.md)
 
-本仓库提供论文 **Direct and residual NWP integration for photovoltaic power forecasting: Metric, subset and temporal dependence** 的模型实现、数据准备工具、实验配置与聚合结果。作者：Xingyu Meng、Feng Yan，Xinjiang University。
+本仓库提供论文 **Direct and residual NWP integration for photovoltaic power forecasting: Metric, subset and temporal dependence** 的模型实现、数据准备工具、实验配置与聚合结果。作者：Xingyu Meng、Liejun Wang、Feng Yan，Xinjiang University。
 
 ## 项目简介
 
@@ -135,6 +135,10 @@ WSPR/
 └── run.py
 ```
 
+## 电子数值补充材料
+
+[Electronic_Supplement.zip](Electronic_Supplement.zip) 提供与论文和PDF Supplement配套的分析结果、划分记录、协议与核验清单。此包单独通过本仓库提供，不作为投稿系统中的大量独立附件上传。它不包含完整原始数据集、训练权重或预测数组。下载解压后可运行 `verify_package.py` 核对文件完整性；论文中的 `electronic_supplement/` 表示解压后数值材料的根目录。
+
 ## 引用
 
 当前为论文稿件，未填写期刊录用信息或DOI：
@@ -142,7 +146,7 @@ WSPR/
 ```bibtex
 @misc{meng2026wspr,
   title  = {Direct and residual NWP integration for photovoltaic power forecasting: Metric, subset and temporal dependence},
-  author = {Meng, Xingyu and Yan, Feng},
+  author = {Meng, Xingyu and Wang, Liejun and Yan, Feng},
   year   = {2026},
   note   = {Manuscript},
   url    = {https://github.com/MVTC-Lab/WSPR}

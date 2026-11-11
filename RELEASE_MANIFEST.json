@@ -1,6 +1,6 @@
 {
   "created": "2026-11-09",
-  "status": "Local README revision; remote update pending",
+  "status": "Prepared code and companion numerical evidence for manuscript submission",
   "repository": "https://github.com/MVTC-Lab/WSPR",
   "manifest_self_hash_excluded": true,
   "datasets_included": false,
@@ -320,20 +320,21 @@
     },
     {
       "path": "README-EN.md",
-      "bytes": 10543,
-      "sha256": "50cd847d9e061e8f00bd083cc84b66a4ed4414552a4541b1de633428d5e95b31",
-      "release_adapted": true
+      "bytes": 11093,
+      "sha256": "122304ef7a222e0971b2d377606ce235fdef4f77ef123de01808ec9507193b7f",
+      "release_adapted": true,
+      "documentation_updated": "2026-11-11"
     },
     {
       "path": "README.md",
-      "bytes": 8331,
-      "sha256": "9944131c6df2da2e48e12194fa2202c0aefbc4970296142563b0197577d03602",
+      "bytes": 8852,
+      "sha256": "78281398ba1711740691bb0d71f02d46fea2422877c66f9a2ea5d9e0bc125e9b",
       "source": "release-preparation",
       "source_sha256": null,
       "previous_candidate_sha256": "f82fed047b22d037410112ffba68e2f2a8d14ecdbb98607fc04aeaa7258b71e6",
       "release_adapted": true,
       "previous_documentation_sha256": "284b0f003cb30922db3ca8d441a6cc216eaec3864da16c56e2db3ba6931640cf",
-      "documentation_updated": "2026-10-13"
+      "documentation_updated": "2026-11-11"
     },
     {
       "path": "requirements.txt",
@@ -487,12 +488,13 @@
     },
     {
       "path": "scripts/verify_release.py",
-      "bytes": 6345,
-      "sha256": "beb324856f70e9e891b26c6757f75cf1e9034dd5d6c1837b6e1435370a6fbd76",
+      "bytes": 7436,
+      "sha256": "51d70a9e996855dec1034b6e721d5d31e3f928b7d5adc72a80136cb05530079a",
       "source": "release-preparation",
       "source_sha256": null,
       "previous_candidate_sha256": "f2cec5af47388da4f232393258b79cf7695d40997cab76d3f0588926c1dda731",
-      "release_adapted": true
+      "release_adapted": true,
+      "adaptation": "Accept and verify companion ZIP hash, CRC and safe member paths without decoding binary bytes as UTF-8"
     },
     {
       "path": "scripts/wspr_q1/prepare_gefcom2014_solar.py",
@@ -580,7 +582,20 @@
       "sha256": "a5e9b0d3065004c8760bae62f140ede2407e2f4ccd27c3ad7fce1482ae49bafe",
       "source": "research-server:utils/tools.py",
       "source_sha256": "a5e9b0d3065004c8760bae62f140ede2407e2f4ccd27c3ad7fce1482ae49bafe"
+    },
+    {
+      "path": "Electronic_Supplement.zip",
+      "bytes": 3414634,
+      "sha256": "3f84dbfba00ad64ee8519fae83c278e8382c7345add75cc568ad6e346cae9721",
+      "source": "companion numerical/protocol records",
+      "source_sha256": "3f84dbfba00ad64ee8519fae83c278e8382c7345add75cc568ad6e346cae9721"
     }
   ],
-  "revision": "2026-11-09-readme-simplification"
+  "revision": "2026-11-09-readme-simplification",
+  "updated": "2026-11-11",
+  "authors": [
+    "Xingyu Meng",
+    "Liejun Wang",
+    "Feng Yan"
+  ]
 }
